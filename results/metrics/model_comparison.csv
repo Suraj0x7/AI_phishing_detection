@@ -1,0 +1,4 @@
+model,accuracy,balanced_accuracy,macro_precision,macro_recall,macro_f1,weighted_f1,roc_auc,legitimate_precision,legitimate_recall,legitimate_f1,phishing_precision,phishing_recall,phishing_f1,ai_phishing_precision,ai_phishing_recall,ai_phishing_f1
+Logistic Regression,0.995,0.9901,0.9902,0.9901,0.9902,0.995,0.9998,0.9866,0.9833,0.985,0.9839,0.9871,0.9855,1.0,1.0,1.0
+Random Forest,0.9917,0.9836,0.9836,0.9836,0.9836,0.9917,0.9998,0.9734,0.9767,0.975,0.9773,0.9742,0.9758,1.0,1.0,1.0
+XGBoost,0.9934,0.987,0.9869,0.987,0.9869,0.9934,0.9996,0.9706,0.99,0.9802,0.9901,0.971,0.9805,1.0,1.0,1.0

@@ -1,0 +1,67 @@
+{
+    "project_title": "A Hybrid Stylometric and Semantic Learning Framework for Detecting AI-Generated Phishing Emails",
+    "timestamp": "2026-10-19 09:34:49",
+    "environment": {
+        "python_version": "3.12.10",
+        "os": "Windows-11-10.0.26300-SP0",
+        "packages": {
+            "pandas": "3.0.6",
+            "numpy": "2.5.4",
+            "scikit-learn": "1.9.1",
+            "xgboost": "3.4.1",
+            "joblib": "1.6.0"
+        }
+    },
+    "dataset_summary": {
+        "total_cleaned_samples": 9049,
+        "class_counts": {
+            "ai_phishing": 6000,
+            "phishing": 1551,
+            "legitimate": 1498
+        },
+        "source_counts": {
+            "Claude_Synthetic": 3000,
+            "GPT4_Synthetic": 3000,
+            "Nazario_Phishing": 1551,
+            "Enron_Legitimate": 1498
+        }
+    },
+    "split_parameters": {
+        "test_size": 0.2,
+        "random_state": 42,
+        "stratified": true
+    },
+    "feature_engineering": {
+        "stylometric_features_count": 10,
+        "tfidf_features_count": 15000,
+        "ngram_range": [
+            1,
+            2
+        ],
+        "sublinear_tf": true,
+        "fused_dimensions": 15010
+    },
+    "best_model": {
+        "name": "Logistic Regression",
+        "test_accuracy": 0.995,
+        "test_macro_precision": 0.9902,
+        "test_macro_recall": 0.9901,
+        "test_macro_f1": 0.9902,
+        "test_roc_auc": 0.9998
+    },
+    "ablation_macro_f1": {
+        "stylometric_only": 0.8567,
+        "tfidf_only": 0.9945,
+        "hybrid": 0.9902
+    },
+    "leakage_audit": {
+        "exact_overlap": 0,
+        "pct_100": 32.76243093922652,
+        "pct_98": 34.530386740331494,
+        "pct_95": 39.50276243093923,
+        "pct_90": 54.088397790055254,
+        "mean_sim": 0.8100233952697521,
+        "median_sim": 0.9106292587224918
+    },
+    "pipeline_execution_time_seconds": 1830.59
+}

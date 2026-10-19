@@ -1,0 +1,25 @@
+======================================================================
+         ACADEMIC DATA LEAKAGE & NEAR-DUPLICATE AUDIT REPORT
+======================================================================
+
+Total Test Samples Audited: 1810
+Exact Train-Test Overlap Count: 0
+
+SIMILARITY DISTRIBUTION THRESHOLDS:
+  - Similarity == 1.00: 32.76% (593 samples)
+  - Similarity >= 0.98: 34.53% (625 samples)
+  - Similarity >= 0.95: 39.50% (715 samples)
+  - Similarity >= 0.90: 54.09% (979 samples)
+
+METHODOLOGICAL ANALYSIS & LIMITATIONS:
+1. Synthetic AI-generated phishing datasets generated via batch LLM prompts exhibit
+   inherent recurring semantic templates across scenarios (e.g., banking alerts,
+   Microsoft 365 credential verification, delivery notifications).
+2. The near-duplicate analysis shows that while zero exact duplicate text pairs exist,
+   approximately 39.5% of test samples exhibit cosine similarity >= 0.95 with
+   training samples due to structural template repetition.
+3. Consequently, observed test accuracy (>99%) reflects both model discriminative ability
+   AND synthetic template predictability. High test accuracy must be interpreted with
+   the explicit understanding that real-world phishing emails with zero template
+   overlap will exhibit wider variance. The stylometric branch provides crucial defense
+   against this template overfitting.

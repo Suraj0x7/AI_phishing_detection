@@ -1,0 +1,4 @@
+model,training_time_seconds
+Logistic Regression,10.98
+Random Forest,8.56
+XGBoost,1455.21

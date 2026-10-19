@@ -1,0 +1,42 @@
+# =====================================================================
+# Local Raw & Processed Research Datasets
+# (Preserved locally for research/training; excluded from Git/Streamlit Cloud)
+# =====================================================================
+data/*.csv
+data/raw/
+data/processed/
+data/**/*.csv
+
+# Large offline training split cache (not needed for Streamlit inference)
+models/split_cache.joblib
+
+# =====================================================================
+# Python Bytecode & Environment Artifacts
+# =====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# =====================================================================
+# Secrets & Credentials
+# =====================================================================
+.env
+.env.*
+.streamlit/secrets.toml
+
+# =====================================================================
+# Jupyter Notebook Checkpoints & OS Temporary Files
+# =====================================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.DS_Store
+Thumbs.db
+*.log

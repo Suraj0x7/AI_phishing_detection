@@ -1,0 +1,17 @@
+{
+    "total_samples": 9049,
+    "training_samples": 7239,
+    "testing_samples": 1810,
+    "train_class_distribution": {
+        "ai_phishing": 4800,
+        "phishing": 1241,
+        "legitimate": 1198
+    },
+    "test_class_distribution": {
+        "ai_phishing": 1200,
+        "phishing": 310,
+        "legitimate": 300
+    },
+    "test_size": 0.2,
+    "random_state": 42
+}
